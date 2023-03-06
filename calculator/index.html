@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+   <style>
+    .main-div{
+        /* background-color: aqua; */
+        width: 50%;
+        height: 700px;
+    }
+    .outer-div{
+        background-color: black;
+        width: 60%;
+        height: 450px;
+        padding-top: 30px;
+        /* display: flex; */
+        border-radius: 15px;
+    }
+    button{
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        margin-top: 20px;
+        border-radius: 40px;
+        border: solid red;
+        font-size: 20PX;
+    }
+    input{
+        width: 320px;
+        height: 45px;
+        border-radius: 5px;
+        border: solid blue;
+        color:black;
+        font-size: 24px;
+        background-color: azure;
+    }
+    button:hover{
+        background-color:black ;
+        color: white;
+        transition: all 0.4s ease 0s;
+    }
+    .red:hover{
+        background-color:red;
+        color: white;
+        transition: all 0.4s ease 0s;
+    }
+    p{
+       font-family: adil;
+        text-transform: capitalize;
+        font-size: 30px;
+        text-shadow: 2px 2px aqua;
+    }
+    @font-face {
+        font-family: adil;
+        src: url('./JosefinSans-Italic-VariableFont_wght.ttf');
+    }
+
+   </style>
+
+
+
+
+</head>
+<body>
+    <center>
+ <div class="main-div">
+  <center>
+      <div class="text-content">
+          <p>calculator waith javascript</p>
+      </div>
+  <div class="outer-div">  
+    <div class="input-div">
+       <input id="inp" disabled type="text" name="" id="">
+    </div>
+    <div class="first-line">
+        <button onclick="adil('1')">1</button>
+        <button onclick="adil('2')">2</button>
+        <button onclick="adil('3')">3</button>
+        <button class="red"  onclick="adil('+')">+</button>
+    </div> 
+    <div class="second-line">
+        <button  onclick="adil('4')">4</button>
+        <button onclick="adil('5')">5</button>
+        <button onclick="adil('6')">6</button>
+        <button  onclick="adil('-')" class="red">-</button>
+    </div> 
+    <div class="third-line"> 
+        <button  onclick="adil('7')">7</button>
+        <button  onclick="adil('8')">8</button>
+        <button  onclick="adil('9')">9</button>
+        <button  onclick="adil('*')" class="red">X</button>
+    </div> 
+    <div class="fourth-line">
+        <button class="red" onclick="res()">=</button>
+        <button  onclick="adil('0')">0</button>
+        <button onclick="clr()">C</button>
+        <button class="red"  onclick="adil('.')"><b>.</b></button>
+    </div>
+    
+ </div>
+    <!-- <div class="fifth-line"> 
+        <input type="button" value="."></input>
+        <input type="button" value="("></input>
+        <input type="button" value=")"></input>
+        <input type="button" value="="></input>
+    </div> -->
+</center>
+  
+ </div>
+
+</center>
+
+
+
+
+ <script src="app.js"></script>
+</body>
+</html>
